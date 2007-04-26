@@ -1,0 +1,9 @@
+Welcome to the SVN repository of Bolzplatz / Slam Soccer / Coup de Foot.
+This repository is still in the works, and nothing may compile at the moment.
+
+This file will include the latest information about the project.
+
+
+Andi
+info.at.xenoage.com
+
