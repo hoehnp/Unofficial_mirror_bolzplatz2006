@@ -1,4 +1,0 @@
-nogroup
-nationalteams
-clubteams
-specialteams
