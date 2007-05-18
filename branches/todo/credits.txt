@@ -1,0 +1,13 @@
+Einige Patches (Stillstand bei Freistoß, Jingles beim Einlaufen) von Malte Löpmann
+
+Neuigkeiten:
+- Torwart klärt zur Ecke bei hohen Bällen
+- Mehr Fouls werden gepfiffen
+- Startbildschirm: Wetter zufällig
+- Splashscreen, bis Spielfenster geöffnet wird
+- Java-Sound-Engine fertig
+
+
+Neue Teams von:
+- Rolf Schmidt ("Yuunlis Frauenteams")
+- ... sammeln (PsychoFish, Segal, Eintracht4ever, Konsti, Torbart, Speedy...)!
