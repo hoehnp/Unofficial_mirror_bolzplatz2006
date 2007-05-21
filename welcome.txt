@@ -1,7 +1,10 @@
 Welcome to the SVN repository of Bolzplatz / Slam Soccer / Coup de Foot.
-This repository is still in the works, and nothing may compile at the moment.
+This repository is still in the works, and many things may not compile at this moment.
 
 This file will include the latest information about the project.
+
+
+2007-05-21: Eclipse project uses relative paths now. Project should compile and run.
 
 
 Andi
