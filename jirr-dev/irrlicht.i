@@ -434,6 +434,7 @@ using namespace irr::io;
 %extend irr::SEvent {
    int getKeyInputChar() {return self->KeyInput.Char;};
    EKEY_CODE getKeyInputKey() {return self->KeyInput.Key;};
+	 int getKeyInputKeyInt() {return self->KeyInput.Key;}; //BP2K6
    bool isKeyInputPressedDown() {return self->KeyInput.PressedDown;};
    bool isKeyInputShift() {return self->KeyInput.Shift;};
    bool isKeyInputCtrl() {return self->KeyInput.Control;};
