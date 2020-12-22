@@ -1,15 +1,16 @@
 # Project: starter
 # Makefile created by Dev-C++ 5.11
 
-CPP      = g++.exe
-CC       = gcc.exe
-WINDRES  = windres.exe
+CPP      = i686-w64-mingw32-g++-win32
+CC       = i686-w64-mingw32-gcc-win32
+WINDRES  = i686-w64-mingw32-windres
+LD       = i686-w64-mingw32-ld
 RES      = bolzplatz2006_private.res
 OBJ      = main.o $(RES)
 LINKOBJ  = main.o $(RES)
-LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -mwindows -s
-INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
-CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+LIBS     = -L"/usr/i686-w64-mingw32/lib" -static-libgcc -mwindows -s
+INCS     = -I"/usr/i686-w64-mingw32/include"
+CXXINCS  = -I"/usr/i686-w64-mingw32/include"
 BIN      = settings.exe
 CXXFLAGS = $(CXXINCS) -Wfatal-errors
 CFLAGS   = $(INCS) -Wfatal-errors
