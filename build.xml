@@ -50,7 +50,7 @@
         </javac>
     </target>
     <target depends="build" name="CreateJar" description="Create Jar file">
-           <jar jarfile="game.jar" basedir="./classes" includes="com/xenoage/**" />
+	<jar jarfile="game.jar" basedir="./classes" includes="com/xenoage/**" />
     </target>
     <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
     <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
