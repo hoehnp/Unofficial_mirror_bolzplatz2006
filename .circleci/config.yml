@@ -15,13 +15,9 @@ jobs:
           command: apt-get install git ant
       - run:
           name: Build for Linux
-          command: bash scripts/build_linux.sh
+          command: ant 
       - store_artifacts:
-          path: linux/_CPack_Packages
-      - run:
-          name: Update Navit-Download-Center
-          command: |
-            bash scripts/update_download_center.sh
+          path: game.jar
   build_win32:
     docker:
       - image: ubuntu:18.04
@@ -31,17 +27,14 @@ jobs:
           name: Prepare the Windows build environment
           command: |
             apt-get update 
-            apt-get install -y mingw-w64 mingw-w64-tools default-jdk nsis libsaxonb-java curl
+            apt-get install -y mingw-w64 mingw-w64-tools default-jdk nsis libsaxonb-java curl ant git
       - run:
           name: Build for Windows
           command: |
-            bash scripts/build_win32.sh
+            ant
+            make
       - store_artifacts:
-          path: win32/navit.exe
-      - run:
-          name: Update Navit-Download-Center
-          command: |
-            bash scripts/update_download_center.sh
+          path: game.jar
 
 workflows:
   version: 2
