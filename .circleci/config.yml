@@ -38,7 +38,7 @@ jobs:
             cd starter/exe/bolzplatz2006/ && make
             cd ../settings && make
             cd ../stadioneditor && make
-            cd ../teameditior && make
+            cd ../teameditor && make
       - store_artifacts:
           path: game.jar
 
