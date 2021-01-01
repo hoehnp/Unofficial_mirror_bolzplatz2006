@@ -28,6 +28,3 @@ $(BIN): $(OBJ)
 main.o: main.c
 	$(CC) -c main.c -o main.o $(CFLAGS)
 
-bolzplatz2006_private.res: bolzplatz2006_private.rc 
-	$(WINDRES) -i bolzplatz2006_private.rc --input-format=rc -o bolzplatz2006_private.res -O coff 
-

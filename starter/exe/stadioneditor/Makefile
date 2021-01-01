@@ -5,7 +5,6 @@ CPP      = i686-w64-mingw32-g++-win32
 CC       = i686-w64-mingw32-gcc-win32
 WINDRES  = i686-w64-mingw32-windres
 LD       = i686-w64-mingw32-ld
-RES      = bolzplatz2006_private.res
 OBJ      = main.o $(RES)
 LINKOBJ  = main.o $(RES)
 LIBS     = -L"/usr/i686-w64-mingw32/lib" -static-libgcc -mwindows -s
@@ -28,7 +27,4 @@ $(BIN): $(OBJ)
 
 main.o: main.c
 	$(CC) -c main.c -o main.o $(CFLAGS)
-
-bolzplatz2006_private.res: bolzplatz2006_private.rc 
-	$(WINDRES) -i bolzplatz2006_private.rc --input-format=rc -o bolzplatz2006_private.res -O coff 
 
