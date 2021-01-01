@@ -32,7 +32,13 @@ jobs:
           name: Build for Windows
           command: |
             ant
-            make
+      - run:
+          name: build starter files
+          command: | 
+            cd starter/exe/bolzplatz2006/ && make
+            cd ../settings && make
+            cd ../stadioneditor && make
+            cd ../teameditior && make
       - store_artifacts:
           path: game.jar
 
